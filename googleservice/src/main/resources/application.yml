@@ -1,0 +1,18 @@
+server:
+  port: 8080  servlet:    context-path: /me    session:      cookie:        name: DCPSESSION
+  
+security:
+  oauth2:
+    client:
+      clientId: 155927313277-ok5d5f1s9a8im2osebem82loe75f62oa.apps.googleusercontent.com
+      clientSecret: Z1wKwrVG0j-YIJCubNiocPo-
+      accessTokenUri: https://www.googleapis.com/oauth2/v3/token
+      userAuthorizationUri: https://accounts.google.com/o/oauth2/auth
+      tokenName: oauth_token
+      authenticationScheme: query
+      clientAuthenticationScheme: form
+      scope: profile email
+    resource:
+      userInfoUri: https://www.googleapis.com/userinfo/v2/me
+      preferTokenInfo: false
+      
